@@ -1,3 +1,10 @@
+// Media queries
+$xs: 440px;
+$s: 576px;
+$m: 768px; 
+$l: 992px; 
+$xl: 1200px; // 1200 / 16 (default font size) = 75em
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +19,14 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px // default: 1rem = 16px // (10/16)x100 = 62.5
+
+    @media screen and (max-width: $xl) {
+        font-size: 50%;
+    }
+
+    // @media screen and (max-width: $s) {
+    //     font-size: 37.5%; // 6px
+    // }
 }
 
 body {
